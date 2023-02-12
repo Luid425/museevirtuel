@@ -1,0 +1,25 @@
+<app-toolbar></app-toolbar>
+<div class=" overflow-y-scroll overflow-x-hidden flex flex-col h-screen w-screen bg-[url(/assets/museemine-dark.png)] bg-cover bg-no-repeat bg-right-top lg:bg-top">
+ 
+  <div class="flex-grow flex flex-col items-center relative pt-14">
+     <button routerLink="/rooms" class="absolute top-20 left-10 text-white md:left-20 lg:left-20 lg:text-lg">Retour</button>
+  <h1 class="text-white text-2xl mt-10 md:text-4xl lg:text-6xl">{{ items[iterationList].name }}</h1>
+
+  <p class="text-white">{{ items[iterationList].content }}</p>
+
+  <div class="flex flex-row items-center my-10 ">
+    <button (click)="down()" ><img src="/assets/left_arrow.png" class="w-6 h-6 lg:w-10 lg:h-10" alt=""></button> 
+  <h3 class="text-white mx-6 md:text-lg lg:text-3xl" >Etape {{iterationList + 1}}</h3>
+    <button (click)="up()"><img on src="/assets/right_arrow.png" class="w-6 h-6 lg:w-10 lg:h-10"  alt=""></button> 
+  </div>
+
+  <audio controls class="mb-10">
+    <source src="https://www.saint-etienne.fr/sites/default/files/contribution/internet/culture/Mine2_MadameM.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+
+  <p class="text-white px-10 md:px-20 lg:text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque dolor recusandae, impedit voluptatibus, commodi quidem vel optio aspernatur repellendus expedita autem rem voluptas in sunt culpa voluptatum delectus cumque sint error quibusdam, explicabo accusamus nesciunt? Consequuntur ex, nobis deleniti laborum nostrum cum officiis quia, laboriosam voluptatibus est, error optio doloribus tenetur odit? Pariatur, vel molestias! Repellendus nobis officia, excepturi, ut autem quo sint culpa, voluptatibus perspiciatis tenetur quod beatae molestias nihil magnam sed rem tempora impedit harum delectus nostrum tempore doloribus. Libero sunt dolorem aliquid id a, odio nam dolor quaerat! Qui molestias, dolorem culpa beatae aperiam eius provident, nobis aliquam ex fugit maiores, officiis dignissimos cum ea blanditiis aliquid accusantium? Ipsam dolor porro sed reiciendis quisquam maiores suscipit error, nulla delectus vel odio. Optio doloribus quidem hic quibusdam cumque aliquam fugiat! Optio nobis illum maxime rerum eligendi ea consectetur minus! Nostrum mollitia iusto, impedit labore soluta nam excepturi, eaque rerum quos ipsa laboriosam obcaecati, repudiandae harum voluptate in? Fuga fugit necessitatibus veritatis, consequuntur explicabo autem eveniet officia excepturi sint ad est minima ut neque deserunt blanditiis nemo dolore illo non molestiae nulla iure nesciunt. Soluta commodi nemo obcaecati ex ullam assumenda harum modi consequuntur explicabo, temporibus corporis ducimus ad expedita non porro earum esse ipsum, cupiditate tempore reprehenderit repudiandae, id voluptatem. Quibusdam molestiae doloremque porro error tempora, sapiente ex odit veniam dicta, fuga esse rerum ipsam neque blanditiis explicabo minima totam aspernatur possimus officia illum ipsum dolorem expedita voluptas repellendus. Veritatis iure nisi eligendi iusto! Incidunt impedit minus laudantium sunt doloribus voluptatibus ad velit nisi commodi deserunt? Accusantium esse quam quos, ipsa, quas sapiente, quo voluptas non quibusdam incidunt voluptatibus vitae? Laboriosam mollitia autem consectetur sapiente et, amet quia laborum incidunt optio debitis. Quam nihil inventore earum quasi rem accusamus, reprehenderit iste sunt ipsam eum, amet porro alias dicta magnam vel tenetur quas quis necessitatibus voluptas et hic omnis debitis veritatis iusto? Quis quas sunt nisi quam officia aut quidem, ea asperiores rem molestiae blanditiis odit, accusantium culpa, eius neque minus necessitatibus ipsa quisquam. Quia eum molestias quisquam illo? Vero sint doloribus suscipit corporis debitis repellat similique iure fugiat, soluta assumenda at ipsum placeat rem, praesentium excepturi quis nesciunt repudiandae, labore perspiciatis natus expedita dolorem. Mollitia accusamus molestiae aliquam commodi pariatur perferendis repellat cumque voluptas, labore doloribus rem nulla veritatis, quisquam delectus unde? Magnam eum atque optio corrupti deserunt est doloribus facere molestiae rem, animi totam, commodi, quidem soluta!</p>
+
+  </div>
+
+</div>

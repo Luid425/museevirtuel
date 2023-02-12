@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-rounded {
+    @apply bg-[#F4F4F4] w-64 text-sm px-4 py-2 rounded-lg md:text-base md:w-80;
+  }
+}
